@@ -16,25 +16,64 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Container(
-                height: 100.0,
-                color: Colors.white,
-                child: Text('Container 1'),
+              CircleAvatar(
+                radius: 60.0,
+                backgroundColor: Colors.red,
+                backgroundImage: AssetImage('images/jahanzeb.png'),
+              ),
+              Text(
+                'Jahanzeb Naeem',
+                style: TextStyle(
+                  fontSize: 40.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                  fontFamily: 'Pacifico',
+                ),
+              ),
+              Text(
+                'PROJECT MANAGER',
+                style: TextStyle(
+                  fontSize: 20.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.teal.shade900,
+                  fontFamily: 'Source Sans Pro',
+                  letterSpacing: 2.0,
+                ),
               ),
               SizedBox(
-                height: 10.0,
+                width: 120.0,
+                child: Divider(
+                  thickness: 2.0,
+                  color: Colors.teal.shade700,
+                ),
               ),
               Container(
-                height: 100.0,
-                color: Colors.orange,
-                child: Text('Container 2'),
-              ),
-              Container(
-                height: 100.0,
-                color: Colors.red,
-                child: Text('Container 3'),
+                color: Colors.white,
+                margin: EdgeInsets.all(20.0),
+                padding: EdgeInsets.symmetric(
+                  vertical: 20.0,
+                  horizontal: 10.0,
+                ),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.phone,
+                      size: 30.0,
+                      color: Colors.teal[700],
+                    ),
+                    SizedBox(
+                      width: 20.0,
+                    ),
+                    Text(
+                      '444 444 4444',
+                      style: TextStyle(
+                        fontSize: 25.0,
+                        color: Colors.teal.shade900,
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
