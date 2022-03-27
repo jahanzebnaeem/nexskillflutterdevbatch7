@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(
-    MyApp(),
-  );
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -16,65 +14,56 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              CircleAvatar(
-                radius: 60.0,
-                backgroundColor: Colors.red,
-                backgroundImage: AssetImage('images/jahanzeb.png'),
+              const CircleAvatar(
+                backgroundImage: AssetImage("images/jahanzeb.png"),
+                radius: 50.0,
               ),
-              Text(
-                'Jahanzeb Naeem',
+              const Text(
+                "Jahanzeb Naeem",
                 style: TextStyle(
                   fontSize: 40.0,
-                  fontWeight: FontWeight.bold,
                   color: Colors.white,
-                  fontFamily: 'Pacifico',
+                  fontWeight: FontWeight.bold,
+                  fontFamily: "Pacifico",
                 ),
               ),
               Text(
-                'PROJECT MANAGER',
+                "PROJECT MANAGER",
                 style: TextStyle(
-                  fontSize: 20.0,
-                  fontWeight: FontWeight.bold,
+                  fontSize: 22.0,
                   color: Colors.teal.shade900,
-                  fontFamily: 'Source Sans Pro',
-                  letterSpacing: 2.0,
-                ),
-              ),
-              SizedBox(
-                width: 120.0,
-                child: Divider(
-                  thickness: 2.0,
-                  color: Colors.teal.shade700,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: "Source Sans Pro",
                 ),
               ),
               Container(
                 color: Colors.white,
-                margin: EdgeInsets.all(20.0),
-                padding: EdgeInsets.symmetric(
+                margin: const EdgeInsets.symmetric(
                   vertical: 20.0,
-                  horizontal: 10.0,
+                  horizontal: 15.0,
                 ),
+                padding: const EdgeInsets.all(10.0),
                 child: Row(
                   children: [
                     Icon(
                       Icons.phone,
-                      size: 30.0,
-                      color: Colors.teal[700],
+                      color: Colors.teal.shade900,
                     ),
-                    SizedBox(
-                      width: 20.0,
+                    const SizedBox(
+                      width: 10.0,
                     ),
                     Text(
-                      '444 444 4444',
+                      "444-444-4444",
                       style: TextStyle(
-                        fontSize: 25.0,
                         color: Colors.teal.shade900,
+                        fontSize: 15.0,
                       ),
-                    ),
+                    )
                   ],
                 ),
-              ),
+              )
             ],
           ),
         ),
