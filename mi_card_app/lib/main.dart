@@ -47,31 +47,22 @@ class MyApp extends StatelessWidget {
                   color: Colors.teal.shade700,
                 ),
               ),
-              Container(
+              Card(
                 color: Colors.white,
                 margin: EdgeInsets.all(20.0),
-                padding: EdgeInsets.symmetric(
-                  vertical: 20.0,
-                  horizontal: 10.0,
-                ),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.phone,
-                      size: 30.0,
-                      color: Colors.teal[700],
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    size: 30.0,
+                    color: Colors.teal[700],
+                  ),
+                  title: Text(
+                    '444 444 4444',
+                    style: TextStyle(
+                      fontSize: 25.0,
+                      color: Colors.teal.shade900,
                     ),
-                    SizedBox(
-                      width: 20.0,
-                    ),
-                    Text(
-                      '444 444 4444',
-                      style: TextStyle(
-                        fontSize: 25.0,
-                        color: Colors.teal.shade900,
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
               ),
             ],
