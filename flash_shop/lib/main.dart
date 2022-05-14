@@ -20,6 +20,8 @@ class FlashShop extends StatelessWidget {
       routes: {
         WelcomeScreen.id: (context) => WelcomeScreen(),
         RegistrationScreen.id: (context) => RegistrationScreen(),
+        LoginScreen.id: (context) => LoginScreen(),
+        CartScreen.id: (context) => CartScreen(),
       },
     );
   }

@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flash_shop/constants.dart';
 
-class ChatScreen extends StatefulWidget {
+class CartScreen extends StatefulWidget {
+  static const String id = 'cart_screen';
+
   @override
-  _ChatScreenState createState() => _ChatScreenState();
+  _CartScreenState createState() => _CartScreenState();
 }
 
-class _ChatScreenState extends State<ChatScreen> {
+class _CartScreenState extends State<CartScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,7 +42,7 @@ class _ChatScreenState extends State<ChatScreen> {
                       decoration: kMessageTextFieldDecoration,
                     ),
                   ),
-                  FlatButton(
+                  TextButton(
                     onPressed: () {
                       //Implement send functionality.
                     },
