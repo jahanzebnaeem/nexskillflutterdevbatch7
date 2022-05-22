@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "70374323978",
+    "project_id": "flutterb7ecom",
+    "storage_bucket": "flutterb7ecom.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70374323978:android:392665c57e17e02312ecf3",
+        "android_client_info": {
+          "package_name": "com.nexskill.flash_shop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70374323978-0itg1mtoqqb03vo6nh1lq59hl4q06lb3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxaVhgkZg8wWiXtenT9ZtrOguAd7GCFW0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "70374323978-0itg1mtoqqb03vo6nh1lq59hl4q06lb3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

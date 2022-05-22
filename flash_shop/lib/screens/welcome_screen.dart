@@ -52,7 +52,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
     controller.addListener(() {
       setState(() {});
       // print(controller.value);
-      print(animation.value);
+      // print(animation.value);
     });
   }
 
@@ -100,7 +100,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                 AnimatedTextKit(
                   animatedTexts: [
                     TypewriterAnimatedText(
-                      'Flash Chat',
+                      'Flash Shop',
                       textStyle: TextStyle(
                         fontSize: 45.0,
                         fontWeight: FontWeight.w900,
